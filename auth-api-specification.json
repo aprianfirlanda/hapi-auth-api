@@ -115,7 +115,7 @@
         }
       }
     },
-    "/users/{id}": {
+    "/users/{userId}": {
       "delete": {
         "tags": [
           "User API"
