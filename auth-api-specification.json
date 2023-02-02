@@ -154,7 +154,7 @@
             }
           },
           "404": {
-            "description": "Invalid user id on register user",
+            "description": "Invalid user id on delete user",
             "content": {
               "application/json": {
                 "schema": {
