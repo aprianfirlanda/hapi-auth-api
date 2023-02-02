@@ -24,4 +24,4 @@ const createServer = async (container) => {
   return server;
 };
 
-module.exports = createServer();
+module.exports = createServer;
