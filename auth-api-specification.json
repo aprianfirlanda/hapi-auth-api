@@ -114,6 +114,75 @@
           }
         }
       }
+    },
+    "/users/{id}": {
+      "delete": {
+        "tags": [
+          "User API"
+        ],
+        "security": [
+          {
+            "bearerAuth": []
+          }
+        ],
+        "description": "Delete user by id",
+        "summary": "Delete user",
+        "parameters": [
+          {
+            "name": "userId",
+            "in": "path",
+            "description": "User Id"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success delete user",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "properties": {
+                    "status": {
+                      "type": "string"
+                    },
+                    "message": {
+                      "type": "string"
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "404": {
+            "description": "Invalid user id on register user",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "properties": {
+                    "status": {
+                      "type": "string"
+                    },
+                    "message": {
+                      "type": "string"
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "components": {
+    "securitySchemes": {
+      "bearerAuth": {
+        "type": "http",
+        "scheme": "bearer",
+        "bearerFormat": "JWT",
+        "description": "Token base authentication"
+      }
     }
   }
 }
