@@ -1,0 +1,22 @@
+{
+  "name": "hapi-auth-api",
+  "version": "1.0.0",
+  "description": "Backend service for Authentication with NodeJS Hapi Framework",
+  "main": "index.js",
+  "directories": {
+    "test": "tests"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/aprianfirlanda/hapi-auth-api.git"
+  },
+  "author": "Aprian Firlanda Imani",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/aprianfirlanda/hapi-auth-api/issues"
+  },
+  "homepage": "https://github.com/aprianfirlanda/hapi-auth-api#readme"
+}
